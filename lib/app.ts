@@ -7,7 +7,7 @@ class App{
 
     public app: express.Application;
     public routePrv: Routes = new Routes();
-    public mongoUrl: string = 'mongodb://entirosdev:dev@12345@ds029640.mlab.com:29640/integrator-api';
+    public mongoUrl: string = 'mongodb://entirosdev:dev987654@ds029640.mlab.com:29640/integrator-api';
 
     constructor() {
         this.app = express();

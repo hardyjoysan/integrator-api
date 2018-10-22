@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 export const EventSchema =  new Schema({
     date: {
-        type: Date,
+        type: String,
         required: 'Enter event date'
     },
     start_time: {
