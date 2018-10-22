@@ -20,6 +20,12 @@ export class Routes{
         // Events
         app.route('/events')
             .get(this.eventController.getEvents);
+        app.route('/event')
+            .post(this.eventController.addNewEvent);
+        app.route('/event/:eventId')
+            .get(this.eventController.getEventWithID)
+            .put(this.eventController.updateEvent)
+            .delete(this.eventController.deleteEvent)
 
         // Registrations
         app.route('/registrations')
