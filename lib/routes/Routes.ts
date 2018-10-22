@@ -2,7 +2,6 @@ import {Request, Response} from "express";
 import {EventController} from "../controllers/EventController";
 import {RegistrationController} from "../controllers/RegistrationController";
 
-
 export class Routes{
 
     public eventController: EventController = new EventController();
@@ -30,6 +29,12 @@ export class Routes{
         // Registrations
         app.route('/registrations')
             .get(this.registrationController.getRegistrations);
+        app.route('/registration')
+            .post(this.registrationController.addNewRegistration);
+        app.route('/registration/:registrationId')
+            .get(this.registrationController.getRegistrationWithID)
+            .put(this.registrationController.updateRegistration)
+            .delete(this.registrationController.deleteEvent)
 
     }
 }
