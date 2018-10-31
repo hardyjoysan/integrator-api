@@ -4,6 +4,7 @@
   "description": "Certified Integrator project developed with express, mongoose, nodemon and mongoDB",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon ./lib/server.js",
     "start": "node ./lib/server.js"
   },
   "keywords": [
@@ -14,8 +15,10 @@
   "author": "Hardy Joyson",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "mongodb": "^3.1.6",
     "mongoose": "^5.3.1",
     "morgan": "^1.9.1"
