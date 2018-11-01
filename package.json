@@ -1,5 +1,5 @@
 {
-  "name": "nodeone",
+  "name": "integrator-api",
   "version": "1.0.0",
   "description": "Certified Integrator project developed with express, mongoose, nodemon and mongoDB",
   "main": "app.js",
@@ -10,7 +10,7 @@
   "keywords": [
     "nodejs",
     "express",
-    "nodeone"
+    "integrator"
   ],
   "author": "Hardy Joyson",
   "license": "ISC",
